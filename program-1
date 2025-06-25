@@ -1,0 +1,43 @@
+import java.util.*;
+public class problem1 {
+    public static double addition(double a,double b){
+ double ans = a+b;
+ return ans;
+    }
+    public static double subtraction(double a,double b){
+        return a-b;
+    }
+    public static double multiplication(double a,double b){
+        return a*b;
+    }
+    public static double divison(double a,double b){
+        return a/b;
+    }
+    public static void main(String[] args) {
+        System.out.println("SMALL CALCULATOR WHICH PERFORMS + - * /");
+        Scanner sc= new Scanner(System.in);
+        System.out.println("ENTER THE VALUES OF A & B");
+        double a=sc.nextDouble();
+        double b=sc.nextDouble();
+        String operation = sc.nextLine();
+        if(operation == "add"){
+            double fadd=addition(a, b);
+            System.out.println("ADDITION OF A&B IS"+ fadd);
+        }
+        if(operation == "subtract"){
+            double fsub=subtraction(a, b);
+            System.out.println("SUBTRACTION OF A&B IS"+ fsub);
+        }
+        if(operation == "multiply"){
+            double fmul=multiplication(a, b);
+            System.out.println("MULTIPLICATION OF A&B IS"+ fmul);
+        }
+        if(operation == "divide"){
+            double fdiv=divison(a, b);
+            System.out.println("DIVISON OF A&B IS"+ fdiv);
+        }
+        
+
+
+    }
+}
